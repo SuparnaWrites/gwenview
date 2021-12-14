@@ -351,7 +351,7 @@ void FileOpsContextManagerItem::createFolder()
 {
     QUrl url = contextManager()->currentDirUrl();
     mNewFileMenu->setParentWidget(mGroup);
-    mNewFileMenu->setPopupFiles(QList<QUrl>() << url);
+    mNewFileMenu->setWorkingDirectory(url);
     mNewFileMenu->createDirectory();
 }
 
