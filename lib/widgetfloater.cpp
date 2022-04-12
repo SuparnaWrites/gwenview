@@ -98,7 +98,7 @@ WidgetFloater::WidgetFloater(QWidget *parent)
     d->mParent->installEventFilter(this);
     d->mChild = nullptr;
     d->mAlignment = Qt::AlignCenter;
-    d->mHorizontalMargin = QApplication::style()->pixelMetric(QStyle::PM_DefaultChildMargin);
+    d->mHorizontalMargin = QApplication::style()->pixelMetric(QStyle::PM_LayoutLeftMargin);
     d->mVerticalMargin = d->mHorizontalMargin;
     d->mInsideUpdateChildGeometry = false;
 }
